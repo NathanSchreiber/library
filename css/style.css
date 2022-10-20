@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --section-bc: #e8e6e6;
+}
+
+html {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.book-list {
+    min-height: 50vh;
+    min-width: 50vw;
+    background-color: var(--section-bc);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border: 1px solid rgb(122, 122, 122);
+    box-shadow: 1px 1px 5px;
+}
+
+li {
+    padding-top: 1rem;
+}
+
+button#new-book-button {
+    width: 10rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #b9b8b8;
+    cursor: pointer;
+}
+
+form {
+    display: none;
+    min-width: 50vw;
+    background-color: var(--section-bc);
+    padding: 2rem;
+    padding-bottom: 0;
+    margin-top: 3rem;
+    border-radius: 5px;
+    border: 1px solid rgb(122, 122, 122);
+    box-shadow: 1px 1px 5px;
+}
+
+input[type="text"] {
+    width: 95%;
+}
+
+label {
+    margin-right: 50%;
+}
+
+form > div {
+    padding: 1rem;
+    margin: auto;
+}
+
+button#submit {
+    width: 50%;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #b9b8b8;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+div.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button.delete-button {
+    background-color: #f1f1f1;
+    color: #313131;
+    border: 2px solid #cbcbcb;
+    border-radius: 30px;
+    width: 1.5rem;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+button.read-button {
+    background-color: #f1f1f1;
+    border: 2px solid #cbcbcb;
+    border-radius: 5px;
+    color: #313131;
+    cursor: pointer;
+}
